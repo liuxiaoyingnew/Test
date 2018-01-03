@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- thread-count 定义同时启动的浏览器数 、parallel="tests" 表明每个test都是平级的 -->
+<suite name="管控平台" parallel="tests" thread-count="1">
+    <!-- chrome,firefox,phantomjs,htmlunit,ghost和ie不区分大小写 -->
+	<parameter name="browserName" value="chrome" />
+	<!-- driver的属性配置文件保存路径 -->
+	<parameter name="driverConfgFilePath" value="config/driver.properties" />
+	<!-- 定义测试的站点  -->
+	<parameter name="testurl" value="http://172.16.14.23:7082/" />
+	<!-- 进程等待1秒中的控制时间 -->
+	<parameter name="sleepTime" value="1" />
+	<!-- 页面元素20秒不出现超时时间 -->
+	<parameter name="timeOut" value="20" />
+	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
+	<parameter name="waitMillisecondsForAlert" value="10000" />
+
+     <!-- 定义测试模块，用test标签包围 -->
+    
+	 <!--test name="登录" preserve-order="true">
+		<classes>
+			<class name="com.huayun.autoTest.testcases.login.LoginPage_001_LoginPassCheck_test" />
+		</classes>
+	</test>
+	-->	 
+		 <test name="云主机" preserve-order="true">
+		<classes>
+			<class name="com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck" />
+		</classes>
+	</test>	
+	
+	
+
+	
+ 
+  	<listeners>
+	 <!-- excel报告 		-->
+			<listener class-name="com.huayun.autoTest.plugins.excelReporter.TestResultListener" />
+			<listener class-name="com.huayun.autoTest.plugins.excelReporter.ExcelReporter" />
+
+	    <!-- html报告
+				<listener class-name="com.huayun.autoTest.plugins.htmlReporter.TestResultListener" />
+				<listener class-name="com.huayun.autoTest.plugins.htmlReporter.RetryListener" />
+				<listener class-name="com.huayun.autoTest.plugins.htmlReporter.PowerEmailableReporter" />
+	     -->
+	</listeners>
+</suite> <!-- Suite -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="管控平台" duration-ms="52089" started-at="2017-12-28T04:28:46Z" finished-at="2017-12-28T04:29:38Z">
+    <groups>
+    </groups>
+    <test name="云主机" duration-ms="52089" started-at="2017-12-28T04:28:46Z" finished-at="2017-12-28T04:29:38Z">
+      <class name="com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck">
+        <test-method status="PASS" signature="startTest(org.testng.ITestContext)[pri:0, instance:com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck@735b478]" name="startTest" is-config="true" duration-ms="12679" started-at="2017-12-28T12:28:46Z" finished-at="2017-12-28T12:28:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7c16905e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="cectrypass(java.util.Map)[pri:0, instance:com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck@735b478]" name="cectrypass" duration-ms="34363" started-at="2017-12-28T12:29:01Z" data-provider="testData" finished-at="2017-12-28T12:29:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{=, LoginName=admin_zhangyb_a, UserName=luobj, ACTUAL=用户名：admin_zhangyb_a, EXCEPT=用户名：admin_zhangyb_a, Password=Huayun!qazxsw2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cectrypass -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck@735b478]" name="endTest" is-config="true" duration-ms="2725" started-at="2017-12-28T12:29:36Z" finished-at="2017-12-28T12:29:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck -->
+    </test> <!-- 云主机 -->
+  </suite> <!-- 管控平台 -->
+</testng-results>

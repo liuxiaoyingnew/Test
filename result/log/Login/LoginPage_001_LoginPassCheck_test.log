@@ -1,0 +1,16 @@
+[2017-12-26 18:44:39] [INFO] 当前操作系统是:[Windows 10]
+[2017-12-26 18:44:39] [INFO] 启动测试浏览器：[chrome]
+[2017-12-26 18:44:42] [INFO] 最大化浏览器:chrome
+[2017-12-26 18:44:48] [INFO] 打开测试页面:[http://172.16.14.23:7082/]
+[2017-12-26 18:44:48] [INFO] LoginPageCheck 测试用例开始执行！
+[2017-12-26 18:44:48] [INFO] 清除元素 [By.id: LoginName]上的内容
+[2017-12-26 18:44:48] [INFO] 清除元素 [By.id: Password]上的内容
+[2017-12-26 18:44:48] [INFO] 输入：[admin_zhangyb_a] 到 [By.id: LoginName]
+[2017-12-26 18:44:49] [INFO] 输入：[Huayun!qazxsw2] 到 [By.id: Password]
+[2017-12-26 18:44:49] [INFO] 点击元素 [By.id: doLogin]
+[2017-12-26 18:44:54] [INFO] 元素文本是：用户名：admin_zhangyb_a
+[2017-12-26 18:44:54] [INFO] 开始检查用户名是不是：用户名：admin_zhangyb_a
+[2017-12-26 18:44:54] [INFO] 找到了期望的文字: [用户名：admin_zhangyb_a]
+[2017-12-26 18:44:54] [INFO] 用户名检查完毕,用户名是：用户名：admin_zhangyb_a
+[2017-12-26 18:44:55] [INFO] LoginPageCheck 测试用例执行成功！
+[2017-12-26 18:44:56] [INFO] 执行成功的用例 = LoginPageCheck

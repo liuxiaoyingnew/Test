@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Failed suite [Failed suite [管控平台]]]" parallel="tests">
+  <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="sleepTime" value="1"/>
+  <parameter name="testurl" value="http://172.16.14.23:7082/"/>
+  <parameter name="waitMillisecondsForAlert" value="10000"/>
+  <parameter name="timeOut" value="20"/>
+  <listeners>
+    <listener class-name="com.huayun.autoTest.plugins.excelReporter.TestResultListener"/>
+    <listener class-name="com.huayun.autoTest.plugins.excelReporter.ExcelReporter"/>
+  </listeners>
+  <test name="云主机(failed)(failed)(failed)" parallel="tests">
+    <classes>
+      <class name="com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck">
+        <methods>
+          <include name="endTest"/>
+          <include name="zcectrypass" invocation-numbers="0"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.huayun.autoTest.testcases.cec.CecPage_001_CecTryCheck -->
+    </classes>
+  </test> <!-- 云主机(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [管控平台]]] -->
